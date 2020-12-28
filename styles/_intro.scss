@@ -1,0 +1,22 @@
+.main-head{
+    background: $background;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+    min-height: 10vh;
+    
+    #logo{
+        flex: 1 1 40rem;
+        color: $text-color;
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        flex: 1 1 40rem;
+    }
+}

@@ -10,7 +10,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     animation: opening 1s ease-in-out;
 }
 h1{
@@ -33,6 +33,13 @@ ul{
 }
 a{
     text-decoration: none;
+    color: $text-color;
+    &:hover{
+        color: $contrast-color;
+    }
+}
+.active{
+    color: $contrast-color;
 }
 
 @keyframes opening{
