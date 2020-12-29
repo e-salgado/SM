@@ -114,3 +114,27 @@ nav{
         padding-bottom: 3rem;
     }
 }
+
+footer{
+    background: $background;
+    color: $text-color;
+    h5{
+        flex: 1 1 40rem;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        flex: 1 1 40rem;
+        align-items: center;
+        justify-content: right;
+    }
+}
+.footer-wrapper{
+    display: flex;
+    padding: 2rem;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
