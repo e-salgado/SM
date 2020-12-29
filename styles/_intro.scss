@@ -20,3 +20,31 @@ nav{
         flex: 1 1 40rem;
     }
 }
+
+.hero{
+    background: linear-gradient(rgba(0, 0, 0, 1), transparent), url('../img/showcase_img.jpg');
+    min-height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex(center, center, column);
+    h2{
+        color: $text-color;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    span{
+        color: $contrast-color;
+    }
+    .buttons a{
+        border: 2px solid $text-color;
+        background: none;
+        color: $text-color;
+        margin: 2rem 1rem;
+        padding: 1rem;
+        &:hover{
+            color: $contrast-color;
+            border: 2px solid $contrast-color;
+        }
+    }
+}

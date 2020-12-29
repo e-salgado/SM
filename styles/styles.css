@@ -22,7 +22,7 @@ h1 {
 }
 
 li, button, label, input, p, a {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 h2 {
@@ -44,6 +44,7 @@ ul {
 a {
   text-decoration: none;
   color: #FFFCF2;
+  font-size: 2.2rem;
 }
 
 a:hover {
@@ -106,5 +107,50 @@ nav .nav-links {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent)), url("../img/showcase_img.jpg");
+  background: linear-gradient(black, transparent), url("../img/showcase_img.jpg");
+  min-height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero h2 {
+  color: #FFFCF2;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero span {
+  color: #EB5E28;
+}
+
+.hero .buttons a {
+  border: 2px solid #FFFCF2;
+  background: none;
+  color: #FFFCF2;
+  margin: 2rem 1rem;
+  padding: 1rem;
+}
+
+.hero .buttons a:hover {
+  color: #EB5E28;
+  border: 2px solid #EB5E28;
 }
 /*# sourceMappingURL=styles.css.map */
