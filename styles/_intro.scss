@@ -29,6 +29,7 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     @include flex(center, center, column);
     h2{
         color: $text-color;
@@ -80,6 +81,7 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     min-height: 60vh;
     color: $text-color;
     @include flex(center, center, column);
