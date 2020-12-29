@@ -4,7 +4,7 @@
     "sources": [
         "styles.scss",
         "_global.scss",
-        "_intro.scss"
+        "_home.scss"
     ],
     "names": [],
     "file": "styles.css"
