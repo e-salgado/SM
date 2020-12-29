@@ -75,3 +75,13 @@ nav{
     flex: 1 1 20rem;
     color: $background;
 }
+.about{
+    background: linear-gradient(rgba(0, 0, 0, 1), transparent), url('../img/91474514_101070494887538_6022902866191056896_n.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    color: $text-color;
+    @include flex(center, center, column);
+    text-align: center;
+}

@@ -205,4 +205,28 @@ nav .nav-links {
           flex: 1 1 20rem;
   color: #252422;
 }
+
+.about {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent)), url("../img/91474514_101070494887538_6022902866191056896_n.jpg");
+  background: linear-gradient(black, transparent), url("../img/91474514_101070494887538_6022902866191056896_n.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
+  color: #FFFCF2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */
