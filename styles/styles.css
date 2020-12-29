@@ -51,6 +51,10 @@ a:hover {
   color: #EB5E28;
 }
 
+a:focus {
+  color: #EB5E28;
+}
+
 .active {
   color: #EB5E28;
 }
@@ -75,6 +79,9 @@ a:hover {
 
 .main-head {
   background: #252422;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 nav {
@@ -152,5 +159,50 @@ nav .nav-links {
 .hero .buttons a:hover {
   color: #EB5E28;
   border: 2px solid #EB5E28;
+}
+
+.hero .buttons a:focus {
+  color: #EB5E28;
+  border: 2px solid #EB5E28;
+}
+
+.schedule {
+  background: #FFFCF2;
+  min-height: 40vh;
+}
+
+.schedule h2 {
+  text-align: center;
+  padding: 3rem 0rem 2rem 0rem;
+  -webkit-text-decoration: underline #EB5E28;
+          text-decoration: underline #EB5E28;
+  color: #252422;
+}
+
+.boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box1, .box2, .box3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  color: #252422;
 }
 /*# sourceMappingURL=styles.css.map */
