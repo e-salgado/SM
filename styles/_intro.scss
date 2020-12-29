@@ -84,4 +84,33 @@ nav{
     color: $text-color;
     @include flex(center, center, column);
     text-align: center;
+    h2{
+        text-decoration: underline $contrast-color;
+    }
+}
+
+.visit{
+    background: #403D39;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2{
+        color: $text-color;
+        padding: 3rem 0rem;
+        text-decoration: underline $contrast-color;
+    }
+}
+.directions{
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        flex: 1 1 20rem;
+    }
+    iframe{
+        flex: 1 1 20rem;
+        padding-bottom: 3rem;
+    }
 }
