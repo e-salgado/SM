@@ -38,6 +38,9 @@ a{
     &:hover{
         color: $contrast-color;
     }
+    &:focus{
+        color: $contrast-color;
+    }
 }
 .active{
     color: $contrast-color;
