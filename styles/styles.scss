@@ -16,3 +16,52 @@ $contrast-color: #EB5E28;
 
 @import "global";
 @import "home";
+
+@media screen and (max-width: 999px){
+    nav{
+        min-height: 5vh;
+        #logo{
+            text-align: center;
+        }
+    }
+    .hero{
+        min-height: 65vh;
+    }
+    .schedule{
+        min-height: 25vh;
+    }
+    .about{
+        min-height: 45vh;
+        p{
+            padding: 0rem 4rem;
+        }
+    }
+    footer{
+        min-height: 5vh;
+    }
+}
+@media screen and (max-width: 892px){
+    .directions{
+        p{
+            padding-left: 3rem;
+        }
+        iframe{
+            padding-right: 3rem;
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    .directions{
+        p{
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+        iframe{
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 626){
+
+}

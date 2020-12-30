@@ -13,13 +13,13 @@ nav{
     min-height: 10vh;
     
     #logo{
-        flex: 1 1 40rem;
+        flex: 1 1 45rem;
         color: $text-color;
     }
     .nav-links{
         display: flex;
         justify-content: space-around;
-        flex: 1 1 40rem;
+        flex: 1 1 45rem;
     }
 }
 
@@ -110,11 +110,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     p{
-        flex: 1 1 20rem;
+        flex: 1 1 40rem;
     }
     iframe{
-        flex: 1 1 20rem;
+        flex: 1 1 40rem;
         padding-bottom: 3rem;
     }
 }
@@ -128,7 +129,7 @@ footer{
     ul{
         display: flex;
         list-style: none;
-        flex: 1 1 40rem;
+        flex: 1 1 10rem;
         align-items: center;
         justify-content: right;
     }
