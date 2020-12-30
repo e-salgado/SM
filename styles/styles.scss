@@ -51,6 +51,12 @@ $contrast-color: #EB5E28;
     }
 }
 @media screen and (max-width: 800px){
+    .hero{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
     .directions{
         p{
             text-align: center;
@@ -60,4 +66,5 @@ $contrast-color: #EB5E28;
             padding: 0;
         }
     }
+
 }
