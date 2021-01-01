@@ -370,6 +370,9 @@ footer ul {
 }
 
 @media screen and (max-width: 800px) {
+  .schedule {
+    padding-bottom: 3rem;
+  }
   .directions p {
     text-align: center;
     padding-bottom: 3rem;

@@ -51,6 +51,10 @@ $contrast-color: #EB5E28;
     }
 }
 @media screen and (max-width: 800px){    
+    .schedule{
+        padding-bottom: 3rem;
+    }
+    
     .directions{
         p{
             text-align: center;
