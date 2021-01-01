@@ -1,10 +1,10 @@
-$header1: 2.5rem;
+$header1: 6rem;
 $header2: 4rem;
-$header3: 2.5rem;
+$header3: 3rem;
 $header4: 2rem;
-$text: 2.2rem;
+$text: 2.6rem;
 $background: #252422;
-$text-color: #FFFCF2;
+$text-color: #fff;
 $contrast-color: #EB5E28;
 
 @mixin flex($justify, $align, $direction) {

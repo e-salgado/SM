@@ -31,7 +31,7 @@ nav{
     background-size: cover;
     background-attachment: fixed;
     @include flex(center, center, column);
-    h2{
+    h1{
         color: $text-color;
         margin-bottom: 2rem;
         text-align: center;
@@ -60,7 +60,7 @@ nav{
 
 .schedule{
     background: $text-color;
-    min-height: 40vh;
+    min-height: 30vh;
     h2{
         text-align: center;
         padding: 3rem 0rem 2rem 0rem;
@@ -88,6 +88,7 @@ nav{
     color: $text-color;
     @include flex(center, center, column);
     text-align: center;
+    padding: 0rem 4rem;
     h2{
         text-decoration: underline $contrast-color;
     }
