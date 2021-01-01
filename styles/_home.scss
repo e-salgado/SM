@@ -33,43 +33,6 @@ nav{
     }
 }
 
-@media screen and (max-width:768px){ /* Mobile Friendly */
-    .main-head{
-        overflow-x: hidden;
-    }
-    .nav-links{
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: $background;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-  
-    }
-  
-    .nav-links li{
-        opacity: 0;
-    }
-  
-    .burger{
-        display: block;
-        cursor: pointer;
-    }
-    .visit{
-        text-align: center; 
-    }
-    .directions{
-        iframe{
-            padding-top: 3rem;
-        }
-    }
-}
-
 .nav-active{
     transform: translateX(0%);
 }
@@ -188,6 +151,7 @@ nav{
     }
     iframe{
         flex: 1 1 40rem;
+        padding-bottom: 3rem;
     }
 }
 

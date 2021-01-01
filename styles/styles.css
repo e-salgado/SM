@@ -131,50 +131,6 @@ nav .nav-links {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
-  /* Mobile Friendly */
-  .main-head {
-    overflow-x: hidden;
-  }
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: #252422;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 50%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
-    transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-    cursor: pointer;
-  }
-  .visit {
-    text-align: center;
-  }
-  .directions iframe {
-    padding-top: 3rem;
-  }
-}
-
 .nav-active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
@@ -399,6 +355,7 @@ nav .nav-links {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
+  padding-bottom: 3rem;
 }
 
 footer {
@@ -455,6 +412,53 @@ footer ul {
   }
   .about p {
     padding: 0rem 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Mobile Friendly */
+  .main-head {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #252422;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .boxes {
+    padding-bottom: 3rem;
+  }
+  .visit {
+    text-align: center;
+  }
+  .directions iframe {
+    padding: 3rem 0rem 0rem 0rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
