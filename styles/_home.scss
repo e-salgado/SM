@@ -40,7 +40,7 @@ nav{
     
     .nav-links{
         position: absolute;
-        right: 0px;
+        right: -20px;
         height: 92vh;
         top: 8vh;
         background-color: $background;
@@ -61,7 +61,15 @@ nav{
         display: block;
         cursor: pointer;
     }
-  }
+    .visit{
+        text-align: center; 
+    }
+    .directions{
+        iframe{
+            padding-top: 3rem;
+        }
+    }
+}
 
 
 .nav-active{
@@ -155,6 +163,7 @@ nav{
     padding: 0rem 4rem;
     h2{
         text-decoration: underline $contrast-color;
+        padding-bottom: 2rem;
     }
 }
 
@@ -166,7 +175,7 @@ nav{
     flex-direction: column;
     h2{
         color: $text-color;
-        padding: 3rem 0rem;
+        padding: 3rem 0rem 2rem 0rem;
         text-decoration: underline $contrast-color;
     }
 }
@@ -181,7 +190,6 @@ nav{
     }
     iframe{
         flex: 1 1 40rem;
-        padding-bottom: 3rem;
     }
 }
 
