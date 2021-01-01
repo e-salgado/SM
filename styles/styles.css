@@ -118,6 +118,107 @@ nav .nav-links {
           flex: 1 1 45rem;
 }
 
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  /* Mobile Friendly */
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #252422;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.toggle .line1 {
+  /*burger animation */
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  /*burger animation */
+  opacity: 0;
+}
+
+.toggle .line3 {
+  /*burger animation */
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@-webkit-keyframes navLinkFade {
+  /*Link animation when burger opens*/
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  /*Link animation when burger opens*/
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
 .hero {
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent)), url("../img/showcase_img.jpg");
   background: linear-gradient(black, transparent), url("../img/showcase_img.jpg");
@@ -336,13 +437,7 @@ footer ul {
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 999px) {
-  nav {
-    min-height: 5vh;
-  }
-  nav #logo {
-    text-align: center;
-  }
+@media screen and (max-width: 1024px) {
   .hero {
     min-height: 85vh;
   }
@@ -354,31 +449,6 @@ footer ul {
   }
   .about p {
     padding: 0rem 4rem;
-  }
-  footer {
-    min-height: 5vh;
-  }
-}
-
-@media screen and (max-width: 892px) {
-  .directions p {
-    padding-left: 3rem;
-  }
-  .directions iframe {
-    padding-right: 3rem;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .schedule {
-    padding-bottom: 3rem;
-  }
-  .directions p {
-    text-align: center;
-    padding-bottom: 3rem;
-  }
-  .directions iframe {
-    padding: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

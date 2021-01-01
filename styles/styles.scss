@@ -17,13 +17,7 @@ $contrast-color: #EB5E28;
 @import "global";
 @import "home";
 
-@media screen and (max-width: 999px){
-    nav{
-        min-height: 5vh;
-        #logo{
-            text-align: center;
-        }
-    }
+@media screen and (max-width: 1024px){
     .hero{
         min-height: 85vh;
     }
@@ -36,33 +30,4 @@ $contrast-color: #EB5E28;
             padding: 0rem 4rem;
         }
     }
-    footer{
-        min-height: 5vh;
-    }
-}
-@media screen and (max-width: 892px){
-    .directions{
-        p{
-            padding-left: 3rem;
-        }
-        iframe{
-            padding-right: 3rem;
-        }
-    }
-}
-@media screen and (max-width: 800px){    
-    .schedule{
-        padding-bottom: 3rem;
-    }
-    
-    .directions{
-        p{
-            text-align: center;
-            padding-bottom: 3rem;
-        }
-        iframe{
-            padding: 0;
-        }
-    }
-
 }
