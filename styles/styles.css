@@ -133,6 +133,9 @@ nav .nav-links {
 
 @media screen and (max-width: 768px) {
   /* Mobile Friendly */
+  .body {
+    overflow-x: hidden;
+  }
   .nav-links {
     position: absolute;
     right: 0px;
