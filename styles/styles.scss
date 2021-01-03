@@ -18,6 +18,9 @@ $contrast-color: #EB5E28;
 @import "home";
 
 @media screen and (max-width: 1024px){
+    html{
+        font-size: 55%;
+    }
     .hero{
         min-height: 85vh;
     }
@@ -32,7 +35,7 @@ $contrast-color: #EB5E28;
     }
 }
 
-@media screen and (max-width:768px){ /* Mobile Friendly */
+@media screen and (max-width:768px) {
     .main-head{
         overflow-x: hidden;
     }
@@ -69,5 +72,24 @@ $contrast-color: #EB5E28;
         iframe{
             padding: 3rem 0rem 0rem 0rem;
         }
+    }
+}
+@media screen and (max-width: 420px){ /* Mobile Friendly*/
+    html{
+        font-size: 45%;
+    }
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
+    footer{
+        text-align: center;
+    }
+    footer h5{
+        padding-bottom: 3rem;
+    }
+    button{
     }
 }
