@@ -34,8 +34,12 @@ h3 {
   font-size: 3rem;
 }
 
-h4, h5 {
+h4 {
   font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
 }
 
 ul {
@@ -419,52 +423,6 @@ footer ul {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .main-head {
-    overflow-x: hidden;
-  }
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: #252422;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 50%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
-    transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-    cursor: pointer;
-  }
-  .boxes {
-    padding-bottom: 3rem;
-  }
-  .visit {
-    text-align: center;
-  }
-  .directions iframe {
-    padding: 3rem 0rem 0rem 0rem;
-  }
-}
-
 @media screen and (max-width: 420px) {
   /* Mobile Friendly*/
   html {
@@ -476,11 +434,26 @@ footer ul {
   #logo {
     padding: 2rem;
   }
+  .box1, .box2, .box3 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30rem;
+            flex: 1 1 30rem;
+    padding: 1rem 0rem;
+  }
+  .directions p {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .directions iframe {
+    width: 90%;
+    padding-bottom: 0rem;
+  }
   footer {
     text-align: center;
   }
   footer h5 {
     padding-bottom: 3rem;
+    font-size: 2.2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
