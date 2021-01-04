@@ -17,10 +17,19 @@ $contrast-color: #EB5E28;
 
 @import "global";
 @import "home";
+@import "about";
 
 @media screen and (max-width: 1024px){
     html{
         font-size: 55%;
+    }
+    #logo{
+        text-align: center;
+    }
+    .nav-links{
+        li{
+            padding: 0rem 3rem;
+        }
     }
     .hero{
         min-height: 85vh;
@@ -36,12 +45,20 @@ $contrast-color: #EB5E28;
     }
 }
 
+
 @media screen and (max-width: 420px){ /* Mobile Friendly*/
     html{
         font-size: 45%;
     }
+    .main-head{
+        position: absolute;
+        width: 100%;
+    }
     nav{
         text-align: center;
+    }
+    .nav-links li{
+        padding: 0rem 0rem;
     }
     #logo{
         padding: 2rem;

@@ -13,46 +13,13 @@ nav{
     min-height: 10vh;
     
     #logo{
-        flex: 1 1 45rem;
+        flex: 1 1 40rem;
         color: $text-color;
     }
     .nav-links{
         display: flex;
         justify-content: space-around;
-        flex: 1 1 45rem;
-    }
-}
-.burger{
-    display: none;
-    div{
-        width: 25px;
-        height: 3px;
-        background-color: #fff;
-        margin: 5px;
-        transition: all 0.3s ease;
-    }
-}
-
-.nav-active{
-    transform: translateX(0%);
-}
-.toggle .line1{ /*burger animation */
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2{ /*burger animation */
-    opacity: 0;
-}
-.toggle .line3{ /*burger animation */
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-@keyframes navLinkFade{ /*Link animation when burger opens*/
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
+        flex: 1 1 40rem;
     }
 }
 
