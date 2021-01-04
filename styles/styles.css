@@ -474,6 +474,9 @@ footer ul {
   }
   nav {
     text-align: center;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
   }
   .nav-links li {
     padding: 0rem 0rem;
