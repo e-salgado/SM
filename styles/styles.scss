@@ -136,7 +136,10 @@ $contrast-color: #EB5E28;
         padding: 0rem 0rem;
     }
     #logo{
-        padding: 2rem;
+        text-align: left;
+    }
+    .hero{
+        min-height: 90vh;
     }
     .box1, .box2, .box3{
         flex: 1 1 30rem;
