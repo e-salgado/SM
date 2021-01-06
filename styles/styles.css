@@ -54,15 +54,15 @@ a {
 }
 
 a:hover {
-  color: #EB5E28;
+  color: #eb5e28;
 }
 
 a:focus {
-  color: #EB5E28;
+  color: #eb5e28;
 }
 
 .active {
-  color: #EB5E28;
+  color: #eb5e28;
 }
 
 @-webkit-keyframes opening {
@@ -83,11 +83,20 @@ a:focus {
   }
 }
 
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent)), url("../img/showcase_img.jpg");
+  background: linear-gradient(black, transparent), url("../img/showcase_img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .main-head {
-  background: #252422;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 nav {
@@ -123,13 +132,7 @@ nav .nav-links {
 }
 
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent)), url("../img/showcase_img.jpg");
-  background: linear-gradient(black, transparent), url("../img/showcase_img.jpg");
-  min-height: 90vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,7 +155,7 @@ nav .nav-links {
 }
 
 .hero span {
-  color: #EB5E28;
+  color: #eb5e28;
 }
 
 .hero .buttons a {
@@ -164,15 +167,15 @@ nav .nav-links {
 }
 
 .hero .buttons a:hover {
-  color: #EB5E28;
-  border: 2px solid #EB5E28;
+  color: #eb5e28;
+  border: 2px solid #eb5e28;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .hero .buttons a:focus {
-  color: #EB5E28;
-  border: 2px solid #EB5E28;
+  color: #eb5e28;
+  border: 2px solid #eb5e28;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -185,8 +188,8 @@ nav .nav-links {
 .schedule h2 {
   text-align: center;
   padding: 3rem 0rem 2rem 0rem;
-  -webkit-text-decoration: underline #EB5E28;
-          text-decoration: underline #EB5E28;
+  -webkit-text-decoration: underline #eb5e28;
+          text-decoration: underline #eb5e28;
   color: #252422;
 }
 
@@ -211,7 +214,9 @@ nav .nav-links {
   padding-bottom: 3rem;
 }
 
-.box1, .box2, .box3 {
+.box1,
+.box2,
+.box3 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
@@ -245,13 +250,13 @@ nav .nav-links {
 }
 
 .about h2 {
-  -webkit-text-decoration: underline #EB5E28;
-          text-decoration: underline #EB5E28;
+  -webkit-text-decoration: underline #eb5e28;
+          text-decoration: underline #eb5e28;
   padding-bottom: 2rem;
 }
 
 .visit {
-  background: #403D39;
+  background: #403d39;
   min-height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -268,8 +273,8 @@ nav .nav-links {
 .visit h2 {
   color: #fff;
   padding: 3rem 0rem 2rem 0rem;
-  -webkit-text-decoration: underline #EB5E28;
-          text-decoration: underline #EB5E28;
+  -webkit-text-decoration: underline #eb5e28;
+          text-decoration: underline #eb5e28;
 }
 
 .directions {
@@ -387,9 +392,9 @@ footer ul {
   .nav-links {
     position: fixed;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: #252422;
+    height: 90vh;
+    top: 10vh;
+    background: rgba(0, 0, 0, 0.6);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -484,7 +489,9 @@ footer ul {
   .hero {
     min-height: 90vh;
   }
-  .box1, .box2, .box3 {
+  .box1,
+  .box2,
+  .box3 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 30rem;
             flex: 1 1 30rem;

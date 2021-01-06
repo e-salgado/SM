@@ -1,148 +1,156 @@
-.main-head{
-    background: $background;
-    position: sticky;
-    top: 0;
+body {
+  background: linear-gradient(rgba(0, 0, 0, 1), transparent),
+    url("../img/showcase_img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-nav{
+.main-head {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  flex-wrap: wrap;
+  min-height: 10vh;
+
+  #logo {
+    flex: 1 1 40rem;
+    color: $text-color;
+  }
+  .nav-links {
     display: flex;
-    align-items: center;
-    margin: auto;
-    width: 90%;
-    flex-wrap: wrap;
-    min-height: 10vh;
-    
-    #logo{
-        flex: 1 1 40rem;
-        color: $text-color;
-    }
-    .nav-links{
-        display: flex;
-        justify-content: space-around;
-        flex: 1 1 40rem;
-    }
+    justify-content: space-around;
+    flex: 1 1 40rem;
+  }
 }
 
-.hero{
-    background: linear-gradient(rgba(0, 0, 0, 1), transparent), url('../img/showcase_img.jpg');
-    min-height: 90vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    @include flex(center, center, column);
-    h1{
-        color: $text-color;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-    span{
-        color: $contrast-color;
-    }
-    .buttons a{
-        border: 2px solid $text-color;
-        background: none;
-        color: $text-color;
-        margin: 2rem 1rem;
-        padding: 1rem;
-        &:hover{
-            color: $contrast-color;
-            border: 2px solid $contrast-color;
-            transition: 0.5s ease-in-out;
-        }
-        &:focus{
-            color: $contrast-color;
-            border: 2px solid $contrast-color;
-            transition: 0.5s ease-in-out;
-        }
-    }
-}
+.hero {
+  min-height: 100vh;
 
-.schedule{
-    background: $text-color;
-    min-height: 30vh;
-    h2{
-        text-align: center;
-        padding: 3rem 0rem 2rem 0rem;
-        text-decoration: underline $contrast-color;
-        color: $background;
-    }
-}
-.boxes{
-    @include flex(center, center, row);
+  @include flex(center, center, column);
+  h1 {
+    color: $text-color;
+    margin-bottom: 2rem;
     text-align: center;
-    margin: auto;
-    flex-wrap: wrap;
-    padding-bottom: 3rem;
+  }
+  span {
+    color: $contrast-color;
+  }
+  .buttons a {
+    border: 2px solid $text-color;
+    background: none;
+    color: $text-color;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    &:hover {
+      color: $contrast-color;
+      border: 2px solid $contrast-color;
+      transition: 0.5s ease-in-out;
+    }
+    &:focus {
+      color: $contrast-color;
+      border: 2px solid $contrast-color;
+      transition: 0.5s ease-in-out;
+    }
+  }
 }
-.box1, .box2, .box3{
-    flex: 1 1 20rem;
+
+.schedule {
+  background: $text-color;
+  min-height: 30vh;
+  h2 {
+    text-align: center;
+    padding: 3rem 0rem 2rem 0rem;
+    text-decoration: underline $contrast-color;
     color: $background;
+  }
 }
-.about{
-    background: linear-gradient(rgba(0, 0, 0, 1), transparent), url('../img/91474514_101070494887538_6022902866191056896_n.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 60vh;
-    color: $text-color;
-    @include flex(center, center, column);
-    text-align: center;
-    padding: 0rem 4rem;
-    h2{
-        text-decoration: underline $contrast-color;
-        padding-bottom: 2rem;
-    }
+.boxes {
+  @include flex(center, center, row);
+  text-align: center;
+  margin: auto;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
 }
-
-.visit{
-    background: #403D39;
-    min-height: 40vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    h2{
-        color: $text-color;
-        padding: 3rem 0rem 2rem 0rem;
-        text-decoration: underline $contrast-color;
-    }
+.box1,
+.box2,
+.box3 {
+  flex: 1 1 20rem;
+  color: $background;
 }
-.directions{
-    color: $text-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    p{
-        flex: 1 1 40rem;
-    }
-    iframe{
-        flex: 1 1 40rem;
-        padding-bottom: 3rem;
-    }
+.about {
+  background: linear-gradient(rgba(0, 0, 0, 1), transparent),
+    url("../img/91474514_101070494887538_6022902866191056896_n.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 60vh;
+  color: $text-color;
+  @include flex(center, center, column);
+  text-align: center;
+  padding: 0rem 4rem;
+  h2 {
+    text-decoration: underline $contrast-color;
+    padding-bottom: 2rem;
+  }
 }
 
-footer{
-    background: $background;
+.visit {
+  background: #403d39;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h2 {
     color: $text-color;
-    h5{
-        flex: 1 1 40rem;
-    }
-    ul{
-        display: flex;
-        list-style: none;
-        flex: 1 1 10rem;
-        align-items: center;
-        justify-content: right;
-    }
+    padding: 3rem 0rem 2rem 0rem;
+    text-decoration: underline $contrast-color;
+  }
 }
-.footer-wrapper{
+.directions {
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  p {
+    flex: 1 1 40rem;
+  }
+  iframe {
+    flex: 1 1 40rem;
+    padding-bottom: 3rem;
+  }
+}
+
+footer {
+  background: $background;
+  color: $text-color;
+  h5 {
+    flex: 1 1 40rem;
+  }
+  ul {
     display: flex;
-    padding: 2rem;
-    margin: auto;
-    width: 90%;
+    list-style: none;
+    flex: 1 1 10rem;
     align-items: center;
-    min-height: 10vh;
-    flex-wrap: wrap;
+    justify-content: right;
+  }
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  margin: auto;
+  width: 90%;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
 }

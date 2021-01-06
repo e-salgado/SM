@@ -6,43 +6,43 @@ $header5: 1.8rem;
 $text: 2.6rem;
 $background: #252422;
 $text-color: #fff;
-$contrast-color: #EB5E28;
+$contrast-color: #eb5e28;
 
 @mixin flex($justify, $align, $direction) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-    flex-direction: $direction;
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
 }
 
 @import "global";
 @import "home";
 @import "about";
 
-@media screen and (max-width: 1024px){
-    html{
-        font-size: 55%;
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+  #logo {
+    text-align: center;
+  }
+  .nav-links {
+    li {
+      padding: 0rem 3rem;
     }
-    #logo{
-        text-align: center;
+  }
+  .hero {
+    min-height: 85vh;
+  }
+  .schedule {
+    min-height: 25vh;
+  }
+  .about {
+    min-height: 45vh;
+    p {
+      padding: 0rem 4rem;
     }
-    .nav-links{
-        li{
-            padding: 0rem 3rem;
-        }
-    }
-    .hero{
-        min-height: 85vh;
-    }
-    .schedule{
-        min-height: 25vh;
-    }
-    .about{
-        min-height: 45vh;
-        p{
-            padding: 0rem 4rem;
-        }
-    }
+  }
 }
 
 .burger {
@@ -58,45 +58,45 @@ $contrast-color: #EB5E28;
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width:768px){ /* Mobile Friendly */
-  body{
-      overflow-x: hidden;
-  }
-  
-  .nav-links{
-      position: fixed;
-      right: 0px;
-      height: 92vh;
-      top: 8vh;
-      background-color: #252422;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 50%;
-      transform: translateX(100%);
-      transition: transform 0.5s ease-in;
-
+@media screen and (max-width: 768px) {
+  /* Mobile Friendly */
+  body {
+    overflow-x: hidden;
   }
 
-  .nav-links li{
-      opacity: 0;
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 90vh;
+    top: 10vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
   }
 
-  .burger{
-      display: block;
-      cursor: pointer;
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
   }
 }
 
 .nav-active {
   -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .toggle .line1 {
   /*burger animation */
   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-          transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
@@ -107,7 +107,7 @@ $contrast-color: #EB5E28;
 .toggle .line3 {
   /*burger animation */
   -webkit-transform: rotate(45deg) translate(-5px, -6px);
-          transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @keyframes navLinkFade {
@@ -115,54 +115,56 @@ $contrast-color: #EB5E28;
   from {
     opacity: 0;
     -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
-
-@media screen and (max-width: 420px){ /* Mobile Friendly*/
-    html{
-        font-size: 45%;
+@media screen and (max-width: 420px) {
+  /* Mobile Friendly*/
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  .nav-links li {
+    padding: 0rem 0rem;
+  }
+  #logo {
+    text-align: center;
+  }
+  .hero {
+    min-height: 90vh;
+  }
+  .box1,
+  .box2,
+  .box3 {
+    flex: 1 1 30rem;
+    padding: 1rem 0rem;
+  }
+  .about {
+    padding: 3rem 0rem;
+  }
+  .directions {
+    p {
+      text-align: center;
+      padding-bottom: 3rem;
     }
-    nav{
-        text-align: center;
+    iframe {
+      width: 90%;
+      padding-bottom: 0rem;
     }
-    .nav-links li{
-        padding: 0rem 0rem;
+  }
+  footer {
+    text-align: center;
+    h5 {
+      padding-bottom: 3rem;
+      font-size: 2.2rem;
     }
-    #logo{
-        text-align: center;
-    }
-    .hero{
-        min-height: 90vh;
-    }
-    .box1, .box2, .box3{
-        flex: 1 1 30rem;
-        padding: 1rem 0rem;
-    }
-    .about{
-        padding: 3rem 0rem;
-    }
-    .directions{
-        p{
-            text-align: center;
-            padding-bottom: 3rem;
-        }
-        iframe{
-            width: 90%;
-            padding-bottom: 0rem;
-        }
-    }
-    footer{
-        text-align: center;
-        h5{
-            padding-bottom: 3rem;
-            font-size: 2.2rem;
-        }
-    }
+  }
 }
